@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — ЛактоТанк</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <a href="index.html" class="logo-link">
+                <span class="logo-icon"><img src="img/лого.png" alt="Логотип"></span>
+                <span class="logo-text">ЛактоТанк</span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#catalog">Каталог</a></li>
+                <li><a href="index.html#industries">Отрасли</a></li>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="factory.html">О заводе</a></li>
+                <li><a href="sale.html">Акции</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="index.html#faq">Вопросы</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+                <li><a href="basket.html"><img class="basket-img" src="img/корзина.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="contact-section">
+            <div class="phone-block">
+                <span class="phone-icon"><img src="img/phone.png" alt="Телефон"></span>
+                <div class="phone-numbers">
+                    <a href="tel:+73412472233">+7 (3412) 47-22-33</a>
+                    <a href="tel:+79124614551">+7 (912) 461-45-51</a>
+                </div>
+            </div>
+            <a href="#" class="btn-request">Оставить заявку</a>
+        </div>
+    </header>
+
+    <div class="container cart-breadcrumbs-container">
+        <div class="cart-breadcrumbs">
+            <a href="index.html">Главная</a>
+            <span>›</span>
+            <span>Корзина</span>
+        </div>
+    </div>
+
+    <section class="cart-section">
+        <div class="cart-container">
+            <h1 class="cart-title">Моя корзина</h1>
+            <p class="cart-subtitle">
+                В вашей корзине <strong id="cartCount">0 товаров</strong> на сумму <strong id="cartTotal">0 ₽</strong>
+            </p>
+
+            <div class="cart-layout">
+                <div class="cart-items" id="cartItems">
+                    <!-- Товары отрисуются скриптом -->
+                </div>
+
+                <div class="cart-summary">
+                    <div class="cart-summary-wrapper">
+                        <h2 class="cart-summary-title">Итого</h2>
+                        <div class="cart-summary-row">
+                            <span id="summaryLabel">Товары (0):</span>
+                            <span id="summarySum">0 ₽</span>
+                        </div>
+                        <div class="cart-summary-row">
+                            <span>Скидка:</span>
+                            <span>0 ₽</span>
+                        </div>
+                        <div class="cart-summary-row cart-summary-total">
+                            <span>Итого:</span>
+                            <span id="summaryTotal">0 ₽</span>
+                        </div>
+                        <a href="checkout.html" class="btn-cart-checkout">Перейти к оформлению</a>
+                        <p class="cart-summary-note">
+                            Доставка и итоговая стоимость будут рассчитаны при оформлении заказа
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="img/лого унимилк новое 4 (2).png" alt="Логотип">
+                    </a>
+                    <p class="footer-desc">
+                        ООО "ЛактоТанк" Производство емкостного оборудования из нержавеющей стали от 50 до 50 000 литров для всех отраслей промышленности.
+                    </p>
+                </div>
+                <div class="footer-col footer-col-nav">
+                    <h4 class="footer-title">РАЗДЕЛЫ</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="sale.html">Акции</a></li>
+                        <li><a href="#">Отрасли</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="factory.html">О заводе</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-col-contacts">
+                    <h4 class="footer-title">КОНТАКТЫ</h4>
+                    <div class="footer-contact-item"><a href="tel:+73412472233">+7 (3412) 47-22-33</a></div>
+                    <div class="footer-contact-item"><a href="tel:+79124614551">+7 (912) 461-45-51</a></div>
+                    <div class="footer-contact-item"><a href="mailto:unimilk18@mail.ru">unimilk18@mail.ru</a></div>
+                    <div class="footer-contact-item">г. Ижевск ул. Союзная, 167</div>
+                    <div class="footer-contact-item">Пн.-Вс. с 8:30 до 17:00</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">© 2026 ООО "ЛактоТанк"</div>
+                <div class="footer-rights">Все права защищены.</div>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a> · <a href="#">Обработка персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        function formatPrice(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+        }
+
+        function renderCart() {
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+            var container = document.getElementById('cartItems');
+            container.innerHTML = '';
+
+            var totalSum = 0;
+            var totalQty = 0;
+
+            if (cart.length === 0) {
+                container.innerHTML = '<p style="padding: 40px; color: #888; font-size: 15px;">Ваша корзина пуста. <a href="index.html#catalog" style="color: #0D60A3; text-decoration: underline;">Перейти в каталог</a></p>';
+            }
+
+            cart.forEach(function(item, index) {
+                var itemTotal = item.price * item.qty;
+                totalSum += itemTotal;
+                totalQty += item.qty;
+
+                var card = document.createElement('div');
+                card.className = 'cart-item';
+                card.innerHTML =
+                    '<div class="cart-item-image">' +
+                        '<img src="' + item.image + '" alt="' + item.name + '">' +
+                    '</div>' +
+                    '<div class="cart-item-info">' +
+                        '<h3 class="cart-item-name">' + item.name + '</h3>' +
+                        '<div class="cart-item-controls">' +
+                            '<button class="cart-qty-btn minus" data-index="' + index + '" type="button">−</button>' +
+                            '<input type="text" class="cart-qty-input" value="' + item.qty + '" readonly>' +
+                            '<button class="cart-qty-btn plus" data-index="' + index + '" type="button">+</button>' +
+                            '<button class="cart-remove-btn" data-index="' + index + '" type="button">Удалить</button>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div class="cart-item-price">' + formatPrice(itemTotal) + ' ₽</div>';
+                container.appendChild(card);
+            });
+
+            document.getElementById('cartCount').textContent = totalQty + ' товар' + (totalQty === 1 ? '' : (totalQty < 5 ? 'а' : 'ов'));
+            document.getElementById('cartTotal').textContent = formatPrice(totalSum) + ' ₽';
+            document.getElementById('summaryLabel').textContent = 'Товары (' + totalQty + '):';
+            document.getElementById('summarySum').textContent = formatPrice(totalSum) + ' ₽';
+            document.getElementById('summaryTotal').textContent = formatPrice(totalSum) + ' ₽';
+
+            bindControls();
+        }
+
+        function bindControls() {
+            document.querySelectorAll('.cart-qty-btn.plus').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var cart = JSON.parse(localStorage.getItem('cart'));
+                    var i = parseInt(this.getAttribute('data-index'));
+                    cart[i].qty++;
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    renderCart();
+                });
+            });
+
+            document.querySelectorAll('.cart-qty-btn.minus').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var cart = JSON.parse(localStorage.getItem('cart'));
+                    var i = parseInt(this.getAttribute('data-index'));
+                    if (cart[i].qty > 1) {
+                        cart[i].qty--;
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        renderCart();
+                    }
+                });
+            });
+
+            document.querySelectorAll('.cart-remove-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var cart = JSON.parse(localStorage.getItem('cart'));
+                    var i = parseInt(this.getAttribute('data-index'));
+                    cart.splice(i, 1);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    renderCart();
+                });
+            });
+        }
+
+        renderCart();
+    });
+    </script>
+</body>
+</html>
